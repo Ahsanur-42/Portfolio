@@ -257,6 +257,8 @@ table{
     nav ul {
         flex-direction: column;
         align-items: center;
+        background-color: #04244b;
+        width: 100%;
     }
     
     nav ul li {
@@ -268,6 +270,18 @@ table{
         padding: 8px 10px;
     }
     
+    .welcome {
+        margin-top: 60px;
+    }
+
+    .welcome h1 {
+        font-size: 16px; 
+    }
+    
+    main {
+        margin-top: 120px;
+    }
+
     .about .a1, .about .a2 {
         width: 100%;
         float: none;
