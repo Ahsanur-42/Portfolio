@@ -1,4 +1,3 @@
-
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -51,6 +50,12 @@ nav ul li a {
     text-decoration: none;
     font-size: 22px;
     padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 8px;
 }
 
 nav ul li a:hover {
@@ -58,18 +63,21 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+
 .menu-toggle {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-right: 20px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.menu-toggle i {
+    font-size: 24px;
 }
 
 .menu-toggle span {
-    width: 25px;
-    height: 2px;
-    background-color: #fff;
-    margin: 4px 0;
+    margin-top: 5px;
 }
 
 .welcome {
@@ -97,6 +105,7 @@ main {
     font-size: x-large;
 }
 
+
 .about {
     justify-content: space-around;
     align-items: center;
@@ -104,7 +113,7 @@ main {
     background-color: #f9f9f9;
     background-image: url(./about.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -118,7 +127,7 @@ main {
     font-size: xx-large;
     color: #c2e1c2;
     margin: 0;
-    display: block; 
+    display: block;
 }
 
 .about .a1 {
@@ -128,12 +137,12 @@ main {
 
 .about .a2 {
     max-width: 600px;
-    width: 50%; 
+    width: 50%;
 }
 
 .about .a2 p {
-    width: 300%; 
-    margin: 0 auto; 
+    width: 300%;
+    margin: 0 auto;
     font-size: x-large;
 }
 
@@ -156,7 +165,7 @@ p {
 .education {
     background-image: url(./education.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
     height: 600px;
     font-size: x-large;
@@ -167,7 +176,7 @@ p {
     background-color: #f4f4f4;
     background-image: url(./skills.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -201,7 +210,7 @@ p {
     font-size: x-large;
     background-image: url(./project.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -219,9 +228,8 @@ p {
     padding: 40px;
     background-image: url(./contact.jpg);
     text-align: left;
-    background-image: url(./contact.jpg);
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     background-position: center;
 }
 
@@ -240,20 +248,20 @@ p {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: x-large;
-    display: flex; 
-    color: #c2e1c2; 
+    display: flex;
+    color: #c2e1c2;
 }
 
 .contact i {
     margin-right: 10px;
-    color: #b4cfb4; 
-    font-size: 24px; 
+    color: #b4cfb4;
+    font-size: 24px;
 }
 
 .contact a {
-    color: #c4dec4; 
+    color: #c4dec4;
     text-decoration: none;
-    font-family: 'Comic Sans MS', cursive, sans-serif; 
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 
 .contact a:hover {
@@ -266,7 +274,6 @@ p {
     background-color: #02182f;
     overflow: hidden;
 }
-
 
 @media (max-width: 768px) {
     .menu-toggle {
@@ -295,6 +302,15 @@ p {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .welcome {
+        position: fixed;
+        width: 100%;
+        background-color: #04244b;
+        z-index: 999;
+        padding: 10px 0;
+        top: 0;
     }
 
     .about {
