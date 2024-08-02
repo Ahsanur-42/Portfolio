@@ -58,7 +58,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hamburger menu styles */
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -88,6 +87,14 @@ nav ul li a:hover {
 main {
     margin-top: 60px;
     padding: 20px;
+}
+
+.home{
+    background-image: url(./home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    font-size: x-large;
 }
 
 .about {
