@@ -1,3 +1,4 @@
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -57,10 +58,19 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.home{
-    font-size: x-large;
-    background-image: url(./home.jpg);
-    color: rgb(225, 224, 221);
+/* Hamburger menu styles */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 4px 0;
 }
 
 .welcome {
@@ -89,26 +99,25 @@ main {
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
-    
-
 }
 
-.about .a1 img{
+.about .a1 img {
     margin-left: 40px;
     width: 380px;
     border-radius: 40%;
-    
 }
-.about .a1 h1{
+
+.about .a1 h1 {
     font-size: xx-large;
     color: #c2e1c2;
     margin: 0;
     display: block; 
 }
- .about .a1{
+
+.about .a1 {
     width: 50%;
     float: left;
- }
+}
 
 .about .a2 {
     max-width: 600px;
@@ -125,6 +134,7 @@ section {
     padding: 50px 20px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
+    overflow: hidden;
 }
 
 h2 {
@@ -136,20 +146,13 @@ p {
     color: #555;
 }
 
-table{
-    border-collapse: collapse;
-    text-align: center;
-    tab-size: 100%;
-}
-
-.education{
+.education {
     background-image: url(./education.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
     height: 600px;
     font-size: x-large;
-    
 }
 
 .skills {
@@ -187,24 +190,23 @@ table{
     border-radius: 5px;
 }
 
-.project{
+.project {
     font-size: x-large;
-    
     background-image: url(./project.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
 }
-.project h1{
+
+.project h1 {
     color: #ddd;
     padding-top: 0;
     padding-bottom: 10px;
 }
 
-.link a{
+.link a {
     color: #c4dec4;
 }
-
 
 .contact {
     padding: 40px;
@@ -225,7 +227,6 @@ table{
 .contact ul {
     list-style: none;
     padding: 0;
-    
 }
 
 .contact li {
@@ -243,7 +244,6 @@ table{
 }
 
 .contact a {
-    
     color: #c4dec4; 
     text-decoration: none;
     font-family: 'Comic Sans MS', cursive, sans-serif; 
@@ -253,64 +253,82 @@ table{
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+.footer {
+    font-size: large;
+    padding: 7px 7px;
+    background-color: #02182f;
+    overflow: hidden;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #04244b;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
-        background-color: #04244b;
-        width: 100%;
     }
-    
+
     nav ul li {
         margin: 10px 0;
     }
-    
-    nav ul li a {
-        font-size: 18px;
-        padding: 8px 10px;
-    }
-    
-    .welcome {
-        margin-top: 60px;
-    }
 
-    .welcome h1 {
-        font-size: 16px; 
-    }
-    
-    main {
-        margin-top: 120px;
+    .about {
+        flex-direction: column;
+        padding: 20px;
     }
 
     .about .a1, .about .a2 {
         width: 100%;
         float: none;
-        text-align: center;
+        margin-bottom: 20px;
     }
-    
+
     .about .a1 img {
-        margin: 20px auto;
-        width: 80%;
+        width: 100%;
+        margin: 0;
     }
-    
+
     .about .a2 p {
-        width: 100%; 
-        font-size: large;
+        width: 100%;
     }
-    
-    .skills, .contact, .project {
-        padding: 20px 10px;
+
+    .education {
+        height: auto;
+        padding: 20px;
     }
-    
-    .skills h1, .contact h1, .project h1 {
-        font-size: large;
+
+    .skills {
+        padding: 20px;
     }
-    
-    .skill-name {
-        font-size: large;
+
+    .contact {
+        padding: 20px;
     }
-    
+
     .contact li {
-        font-size: large;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact i {
+        margin-bottom: 10px;
     }
 }
