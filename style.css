@@ -63,7 +63,6 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -103,6 +102,7 @@ main {
     background-size: cover; 
     background-position: center;
     font-size: x-large;
+    text-align: justify;
 }
 
 
@@ -224,6 +224,51 @@ p {
     color: #c4dec4;
 }
 
+.resume{
+    background-image: url(./cv.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.resume h1{
+    font-size: xx-large;
+    padding-top: 0;
+    color: #ddd;
+}
+
+.resume p a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: xx-large;
+    display: inline-block;
+}
+
+.resume .cv1{
+    font-size: x-large;
+    color: #f9f107;
+    text-align: justify;
+}
+
+.download-cv-btn {
+    display: inline-block;
+    background-color: #b81212;
+    color: #fff;
+    padding: 12px 20px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: xx-large;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.download-cv-btn:hover {
+    background-color: #04244b;
+    color: #fff;
+}
+
+
 .contact {
     padding: 40px;
     background-image: url(./contact.jpg);
@@ -248,7 +293,7 @@ p {
     margin-top: 25px;
     margin-bottom: 25px;
     font-size: x-large;
-    display: flex;
+
     color: #c2e1c2;
 }
 
@@ -273,6 +318,7 @@ p {
     padding: 7px 7px;
     background-color: #02182f;
     overflow: hidden;
+    text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -280,7 +326,7 @@ p {
         display: flex;
     }
 
-    .nav-links {
+    nav ul {
         display: none;
         flex-direction: column;
         width: 100%;
@@ -288,30 +334,31 @@ p {
         position: absolute;
         top: 60px;
         left: 0;
-        padding: 20px 0;
     }
 
-    .nav-links.active {
+    nav ul.showing {
         display: flex;
     }
 
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
     nav ul li {
-        margin: 10px 0;
+        margin: 0;
+        text-align: center;
     }
 
-    .welcome {
-        position: fixed;
-        width: 100%;
-        background-color: #04244b;
-        z-index: 999;
+    nav ul li a {
+        font-size: 20px;
         padding: 10px 0;
-        top: 0;
     }
+
+    .welcome h1 {
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 80px;
+        padding: 10px;
+    }
+}
 
     .about {
         flex-direction: column;
@@ -354,4 +401,3 @@ p {
     .contact i {
         margin-bottom: 10px;
     }
-}
