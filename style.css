@@ -176,7 +176,7 @@ p {
 
 .skills {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #caa1a1;
     background-image: url(./skills.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,6 +186,7 @@ p {
 .skills h1 {
     margin-bottom: 20px;
     font-size: xx-large;
+    color: #f0f80b;
 }
 
 .skill {
@@ -195,6 +196,7 @@ p {
 .skill-name {
     font-size: x-large;
     font-weight: 200;
+    color: #c6cf22df;
 }
 
 .skill-bar {
@@ -379,7 +381,7 @@ p {
     }
 
     .about .a2 p {
-        width: 100%;
+        width: 80%;
     }
 
     .education {
