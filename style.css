@@ -329,7 +329,7 @@ p {
     nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: 60%;
         background-color: #04244b;
         position: absolute;
         top: 60px;
@@ -338,10 +338,11 @@ p {
 
     nav ul.showing {
         display: flex;
+        
     }
 
     nav ul li {
-        margin: 0;
+        margin: 1;
         text-align: center;
     }
 
